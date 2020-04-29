@@ -1,9 +1,22 @@
 import React from "react";
-
+import Header from "./Header.js";
+import APOD from "./APOD.js";
+import Explanation from "./Explanation.js";
 
 const ContentField = props => {
     return (
-        <h1>{props.title}</h1>
+        <div>
+         <Header 
+          title = {props.nasaData.title}
+         />
+ 
+         <APOD
+          hdurl = {props.nasaData.hdurl}
+         />
+        
+         
+         
+       </div>
     );
 };
 

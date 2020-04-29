@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import ContentField from './components/ContentField';
-import Header from './components/Header';
+
 
 
 function App() {
@@ -23,9 +23,7 @@ function App() {
   return (
     <div>
       <ContentField
-      title = {nasaData.title}
-      hdurl = {nasaData.hdurl}
-      explanation = {nasaData.explanation}
+      nasaData = {nasaData}
       />
     </div>
     );
@@ -33,7 +31,12 @@ function App() {
   
   export default App;
 
-    /*&
+    /*
+
+    title = {nasaData.title}
+      hdurl = {nasaData.hdurl}
+      explanation = {nasaData.explanation}
+
     <div className="App">
       <p>
         Read through the instructions in the README.md file to build your NASA
