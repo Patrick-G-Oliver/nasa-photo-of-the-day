@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import ContentField from './components/ContentField';
+import Header from './components/Header';
 
 
 function App() {
@@ -22,9 +23,9 @@ function App() {
   return (
     <div>
       <ContentField
-        title = {nasaData.title}
-        img = {nasaData.hdurl}
-        description = {nasaData.explanation}
+      title = {nasaData.title}
+      hdurl = {nasaData.hdurl}
+      explanation = {nasaData.explanation}
       />
     </div>
     );
