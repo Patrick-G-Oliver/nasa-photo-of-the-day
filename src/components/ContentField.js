@@ -14,15 +14,12 @@ const ContentField = props => {
           hdurl = {props.nasaData.hdurl}
          />
         
-         
+         <Explanation
+          explanation = {props.nasaData.explanation}
+         />
          
        </div>
     );
 };
 
 export default ContentField;
-/*
-hdurl = {nasaData.hdurl}
-explanation = {nasaData.explanation}
-<h1>{props.title}</h1>
-*/
